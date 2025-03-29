@@ -1,0 +1,98 @@
+.photo {
+    position: relative; /*Allows images to be positioned relative to its normal position; displayed inline with the other images */
+    display: inline-block; /*Makes the images inline and it can apply to height and width values */
+    overflow: hidden; /*Hides the box content until the user hovers over the images */
+}
+
+.photo img {
+    width: 300px;
+    height: 400px;
+    transition: transform 0.3s ease;
+/*Allows the hover effect to not be sudden*/
+}
+
+.box {
+    position: absolute; /*Box can overlap the image */
+    bottom: 0; /*Allows the box to be displayed*/
+    background-color: #00003C;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    transform: translateY(100%); /*Box moves along vertical y-axis and will show from the bottom of the image
+    100% ensures the box is hidden and will be translated by 100% of its own height, showing from bottom of image*/
+
+transition: transform 0.3s ease;
+/*Allows the box transitions not to be sudden */
+
+text-align: center;
+ }
+
+.photo:hover .box {
+transform: translateY(0);
+/*Images (under class '.photo') will be hovered.
+Details within the box will be targeted.
+
+translateY(0) resets vertical translation, bringing element back to its original position vertically.
+The vertical position reset and 0 causes box to appear and move back up when the images are hovered over. */
+}
+
+h1 {
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+span {
+    font-size: 20px;
+    margin: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+}
+
+img {
+    height: 400px;
+    object-fit: cover; /*Images resized to fit its container; prevents distortion*/
+    width: 300px;
+
+}
+
+body {
+    background-color:#2D7000;
+}
+
+.photo:hover img {
+    transform: scale(1.1) rotate(-3deg);
+    /*Due to scaling effect, hovered images will appear slightly larger than original size (scale (1.1) scales image to 110% of its original size).
+    When images are hovered, they will rotate -3 degrees clockwise.*/
+
+}
+
+.container {
+justify-content: center; /*Content is centered*/
+text-align: center;
+}
+
+a {
+    color: whitesmoke;
+    font-size: 15px;
+}
+/*Color and font size of page editor link*/
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align:
+    center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+}
+/*Footer for page editor*/

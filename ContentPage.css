@@ -1,0 +1,93 @@
+/*My Content Page*/
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: mediumseagreen;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0;
+}
+
+
+h2 {
+    padding: 10px;
+    background-color: #00003C;
+    color: white;
+}
+
+img {
+    width: 50px;
+    padding-right: 5px;
+    float: right;
+}
+
+nav {
+    display: inline;
+}
+
+ol {
+    text-align: center;
+}
+
+ol li {
+    display: inline;
+    font-size: 18px;
+    padding: 25px;
+    background-color: #00003C;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+dl, dd {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+/*Content*/
+
+dt {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    text-align: center;
+}
+/*Content*/
+
+.goup {
+    position: fixed; /*Button will be visible within browser all the time*/
+    bottom: 40px;
+    right: 30px;
+    padding: 5px 5px;/*Padding on all sides of element*/
+    background-color: grey;
+    color: #fff; /*Text colour*/
+    border-radius: 10px; /*Button's corners*/
+    cursor: pointer;
+
+}
+
+.goup:hover {
+    background-color: #f7f7f7; /*Colour changes when hovered*/
+    color: #000/*Text colour changes when hovered*/
+}
+
+html {
+    scroll-behavior: smooth; /*When Go To Top button is pressed, webpage will scroll*/
+}
+
+a {
+    color: whitesmoke;
+    font-size: 15px;
+}
+/*Color and font size of page editor link*/
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+} 

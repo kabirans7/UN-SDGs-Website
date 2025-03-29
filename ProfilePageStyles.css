@@ -1,0 +1,137 @@
+h1 {
+ text-align: center;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+sans-serif;
+
+ }
+ h3 {
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+sans-serif;
+ }
+ p {
+ font-family: Arial, Helvetica, sans-serif;
+ color: whitesmoke;
+ }
+ .progression {
+ width: 100%; /*Progress bar's width covers entire page width */
+ background-color: #f1f1f1;
+ }
+ .progress-bar {
+ width: 0%; /*Progress bar will be empty initially*/
+ height: 30px; /*Progress bar's height*/
+ background-color: #00003C;
+ text-align: center;
+ line-height: 40px;/*Height of text in progress bar*/
+ color: whitesmoke;
+ }
+ .Confirmation {
+ display: none; /*Initially hidden from the webpage by default */
+ position: fixed; /*Stays in place*/
+ z-index: 1; /*Controls stacking order of positioned elements
+ confirmation will sit on top */
+ left: 0;
+ top: 0;
+ width: 100%; /*Width of black background effect when confirmation
+content pops up*/
+ height: 100%; /*Height of black background effect when
+confirmation content pops up*/
+ overflow: auto; /*Enables scrolling if needed*/
+ background-color: rgba(0,0,0,0.4); /*Enables black background
+effect with opacity
+ when confirmation content pops up */
+
+
+ }
+
+ .confirmation-content {
+ background-color: #fefefe;
+ margin: 10% auto; /*10% from the top and centered*/
+ padding: 10px;
+ border: 1px solid #888;
+ width: 20%; /*Vary depending on screen size*/
+ }
+ .reset-content {
+ background-color: #fefefe;
+ margin: 10% auto; /*10% from the top and centered*/
+ padding: 10px;
+ border: 1px solid #888;
+ width: 20%; /*Vary depending on screen size*/
+ }
+ .reset-content p {
+ color: #000;
+ }
+ .confirmation-content p {
+ color: #000
+ }
+ .reset-button {
+ background-color: #00003C;
+ color: white;
+ padding: 10px 20px;
+ border: none;
+ cursor: pointer;
+ }
+ .reset-button:hover {
+ background-color: #000028;
+ }
+ .confirmation-button {
+ background-color: #00003C;
+ color: white;
+ padding: 10px 20px;
+ border: none;
+ cursor: pointer;
+ }
+
+ .confirmation-button:hover {
+ background-color: #000028;
+ }
+ /*Once hovered, colour alters*/
+ body {
+ background-color: #2D9C00;
+
+ }
+ .buttons:hover {
+ cursor: pointer;
+ background-color: grey;
+ }
+ /*Once hovered, colour alters*/
+ .buttons {
+ font-size: 15px;
+ border-radius: 20px;
+ display: inline-block;
+ margin: 0 auto;
+ }
+
+ .editor {
+ padding: 10px;
+ background-color: #00003C;
+ text-align: center;
+ width: 100%;
+ }
+ /*Page Editor Styles*/
+
+a {
+ color: whitesmoke;
+ font-size: 15px;
+ }
+/*Color and font size of page editor link*/
+.container {
+ justify-content: center; /*Content is centered*/
+ text-align: center;
+
+ }
+
+ #personalbox, #volunteeringbox, #qualificationsbox,
+ #contactbox {
+ background-color: grey;
+ text-align: center;
+ }
+ footer {
+background-color: #333;
+color: white; text-align:
+center;
+padding: 20px 0;
+position: relative;
+bottom: 0;
+width: 100%;
+}
+/*For page editor*/

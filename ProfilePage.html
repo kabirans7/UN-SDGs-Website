@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang= "en">
+    <head>
+        <meta charset= "UTF-8">
+        <title>profile</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="profilestyle.css">
+    </head>
+
+    <body>
+        <!--Web logo and nav bar-->
+        <header>
+            <div class="logo">
+                <img src="Images/logo.png" alt="Website Logo">
+            </div>
+            <nav>
+                <ul>
+                    
+<li><a href="https://w1899624.users.ecs.westminster.ac.uk/JKAYQ/home.html">Home</a></li>
+<li><a href="profile.html" class="active">Profile</a></li>
+<li><a href="https://w1977865.users.ecs.westminster.ac.uk/JKAYQ/shop.html">Shop</a></li>
+<li><a href="https://w1899624.users.ecs.westminster.ac.uk/JKAYQ/feedback.html">Feedback</a></li>
+<li><a href="team.html">Team</a></li>
+
+                </ul>
+            </nav>
+        </header>
+    
+    <div class="container">
+        <h1>Build Your User Profile</h1>
+       
+    <div class="progression">
+        <!-- 'divs': Block elements to create structured sections of webpage-->
+        <!--Section on user profile progression-->
+        
+    <div class="progress-bar" id="progressbar">0%</div>
+    <!--Section on creating the progression bar-->
+        
+    </div>
+    <br>
+        
+        <!-- 'divs': Block elements to create structured sections of webpage-->
+        <!--Contains entire webpage-->
+
+    <div class="container">
+         <button onclick="startProfile()" class="buttons">Start Profile</button>
+        <br>
+        <button onclick="editSection()" class="buttons" id="edit">Edit STEP 1</button>
+        <br>
+        
+        <!--Start button defined and first step of user profile
+        defined-->
+        <!--Start button and personal details options will appear-->
+        
+    <div id= "personal">
+    <fieldset id="personalbox">
+    <h3>STEP 1: Personal Details</h3>
+    Name: <b id="name"></b>
+    <br>
+    Age: <b id="age"></b>
+    <br>
+    Gender: <b id="gender"></b>
+    <br>
+    Privacy: <b id="privacy"></b>
+    <br><br>
+</fieldset>
+</div>
+
+    <br>
+
+    <button onclick="nextSection()" class="buttons" id="next">STEP 2</button>
+    <button onclick="ediSection()" class="buttons" id="edi">Edit STEP 2</button>
+    <br>
+
+<!--Next button defined and second step of user profile defined-->
+<!--Next button and volunteering work options will appear-->
+
+        <div id="volunteering">
+        <fieldset id= "volunteeringbox">
+        <h3>STEP 2: Volunteering Work</h3>
+
+        Reason for volunteering: <b id="reason"></b>
+        <br>
+        Desired way of volunteering: <b id="desired"></b>
+        <br>
+        Desired volunteering task: <b id="task"></b>
+        <br>
+        Desired volunteering location: <b id="location"></b>
+        <br>
+        Desired volunteering assignment type: <b id="assignment"></b>
+        <br>
+        
+    </fieldset>
+</div>
+    <br>
+    
+    <button onclick="nexSection()" class="buttons" id="nex">STEP 3</button>
+    <button onclick="edSection()" class="buttons" id="ed">Edit STEP 3</button>
+    <br>
+        <!--Next button defined and third step of user profile defined-->
+        <!--Next button and qualification options will appear-->
+        
+        <div id="qualifications">
+        <fieldset id= "qualificationsbox">
+        
+        <h3>STEP 3: Qualifications</h3>
+        Area of study: <b id="study"></b>
+        <br>
+        Highest degree obtained: <b id="degree"></b>
+        <br>        
+        University Institution: <b id="uni"></b>
+        <br>
+        Completion Year: <b id="year"></b>
+        <br>
+        Country of university education: <b id="country"></b>
+        <br><br>
+    </fieldset>
+</div>
+<br>
+
+<button onclick="ntSection()" class="buttons" id="nt">STEP 4</button>
+<button onclick="eSection()" class="buttons" id="e">Edit STEP 4</button>
+<br>
+<!--Next button defined and final step of user profile defined-->
+<!--Next button and availability and contact options will
+appear-->
+
+<div id="contact">
+    <fieldset id="contactbox">
+        <h3>STEP 4: Availability and Contact</h3>
+        Availability Hours: <b id="hours"></b>
+        <br>
+        Telephone Number: <b id="tel"></b>
+        <br>
+        Email: <b id="email"></b>
+        <br><br>
+    </fieldset>
+</div>
+<br>
+
+<!--Submit button defined-->
+<!--Submit button will appear-->
+<button onclick="resetProfile()" class="buttons" id="reset">Reset</button>
+<button onclick="submitProfile()" class="buttons" id="submit">Submit</button>
+<!--Section on confirmation content after user presses submit button-->
+
+<div id="confirmation" class="Confirmation">
+<!--After submit button is pressed, confirmation content of user deciding whether to submit profile or not appears-->
+<!--Buttons defined where the user can press yes to submit or no to edit the profile-->
+
+<div class="confirmation-content">
+    <p>Are you sure you want to submit?</p>
+    <button class="confirmation-button" onclick="continueConfirmation()">Yes</button>
+    <button class="confirmation-button" onclick="closeConfirmation()">No</button>
+</div>
+</div>
+</div>
+
+<div id="resetconfirmation" class="Confirmation">
+    <div class="reset-content">
+        <p>Are you sure you want to reset?</p>
+        <button class="reset-button" onclick="continueReset()">Yes</button>
+        <button class="reset-button" onclick="closeReset()">No</button>
+    </div>
+</div>
+    
+    <script src="profilejavascript.js"></script>
+    
+    <br><br>
+    
+    <footer>
+        <p>&copy; 2024 Education for Sustainability. All rights reserved.</p>
+        <p>link to <a href="pageEditor_ST3.html" target="_blank" style="color: #f8f9fa; text-decoration: underline;">student 3 page editor</a></p>
+    
+    </footer>
+    <!--Page Editor Referenced-->
+    
+    </div>
+
+</body>
+</html>
